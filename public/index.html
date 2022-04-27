@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banqua :: Client Information Center</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container" id="formbox">
+        <div class="box" >
+            <a href="https://banqua.io"><img src="./img/logo.png"/ height="150"></a>
+            <div class="mainbox">
+                <h1>Welcome Back</h1>
+                <input type="text" name="tguid" placeholder="Telegram user ID" id="uid">
+                <br>
+                <button id="btn">Get Data</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard" id="dashboard">
+        <header>
+            <div class="container2 d-flex">
+                <div class="left">
+                    <a href="https://banqua.io"><img src="./img/logo.png"/ height="90"></a>
+                </div>
+                <div class="right">
+                    <ul class="h">
+                        <li><a href="">Welcome Back &nbsp; <div class="un" >👮 <span id="xn"></span></div></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container2 contentbox">
+            <div class="cboxleft">
+                <div class="sidebar">
+                    <ul>
+                        <li>👮 Name: <span id="n"></span></li>
+                        <li>🔷 User ID: <span id="i"></span></li>
+                        <li>🔗 Username: <span id="u"></span></li>
+                        <li>👤 Referr By: <span id="r"></span></li>
+                        <li>👥 Referral Count: <span id="rc"></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cboxright">
+                <div class="m-con">
+                    <div class="mywallet">
+                        <div class="circle cr1" id="mw"></div>
+                        <div class="ct">My Wallet</div>
+                    </div>
+
+                    <div class="reward_per">
+                        <div class="circle cr2" id="rp"></div>
+                        <div class="ct">Reward percent</div>
+                    </div>
+
+                    <div class="reward ">
+                        <div class="circle cr3" id="rw"></div>
+                        <div class="ct">Reward</div>
+                    </div>
+
+                    <div class="today ">
+                        <div class="circle cr4" id="tmw"></div>
+                        <div class="ct">Today my Wallet</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
