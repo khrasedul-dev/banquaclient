@@ -12,7 +12,7 @@ id('btn').addEventListener('click',(e)=>{
     }
     if (isANumber(uid)) {
 
-        fetch('https://banquaapi.herokuapp.com/',{
+        fetch('https://banqua-api.vercel.app/',{
             body: JSON.stringify({"uid":uid}),
             method: "post"
         })
