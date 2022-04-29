@@ -15,21 +15,29 @@
                 <h1>Welcome Back</h1>
                 <input type="text" name="tguid" placeholder="Telegram user ID" id="uid">
                 <br>
-                <button id="btn">Get Data</button>
+                <input type="button" value="Get Data" id="btn">
             </div>
         </div>
     </div>
 
-    <div class="dashboard" id="dashboard">
+    <div class="dashboard" id="dashboard" >
         <header>
             <div class="container2 d-flex">
                 <div class="left">
                     <a href="https://banqua.io"><img src="./img/logo.png"/ height="90"></a>
                 </div>
-                <div class="right">
-                    <ul class="h">
-                        <li><a href="">Welcome Back &nbsp; <div class="un" >👮 <span id="xn"></span></div></a></li>
+                <span id="menuIcon">≡</span><span id="menuIcon2">✖</span>
+
+                <div class="right" >
+                    <ul class="h" id="col">
+                        <li id="mci" style="text-align: center; border-bottom: 1px solid #ddd;"><img src="./img/logo.png" alt="Logo" height="150px"></li>
+                        <li><a href="https://banqua.io/">🏠 Home</a></li>
+                        <li><a href="https://t.me/banqua_bot">📌 Telegram</a></li>
+                        <li><a href="https://banqua.io/about/">📃 Info</a></li>
+                        <li><a href="https://banqua.io/contact/">📧 Contact us</a></li>
+
                     </ul>
+                    
                 </div>
             </div>
         </header>
@@ -37,6 +45,7 @@
         <div class="container2 contentbox">
             <div class="cboxleft">
                 <div class="sidebar">
+                    <h1>User Information</h1>
                     <ul>
                         <li>👮 Name: <span id="n"></span></li>
                         <li>🔷 User ID: <span id="i"></span></li>
@@ -49,24 +58,27 @@
 
             <div class="cboxright">
                 <div class="m-con">
-                    <div class="mywallet">
-                        <div class="circle cr1" id="mw"></div>
-                        <div class="ct">My Wallet</div>
-                    </div>
-
-                    <div class="reward_per">
-                        <div class="circle cr2" id="rp"></div>
-                        <div class="ct">Reward percent</div>
-                    </div>
-
-                    <div class="reward ">
-                        <div class="circle cr3" id="rw"></div>
-                        <div class="ct">Reward</div>
-                    </div>
-
-                    <div class="today ">
-                        <div class="circle cr4" id="tmw"></div>
-                        <div class="ct">Today my Wallet</div>
+                    <h1>User Reward Chart</h1>
+                    <div class="dff">
+                        <div class="mywallet cc">
+                            <div class="circle cr1" id="mw"></div>
+                            <div class="ct">My Wallet</div>
+                        </div>
+    
+                        <div class="reward_per cc">
+                            <div class="circle cr2" id="rp"></div>
+                            <div class="ct">Reward percent</div>
+                        </div>
+    
+                        <div class="reward cc">
+                            <div class="circle cr3" id="rw"></div>
+                            <div class="ct">Reward</div>
+                        </div>
+    
+                        <div class="today cc">
+                            <div class="circle cr4" id="tmw"></div>
+                            <div class="ct">Today my Wallet</div>
+                        </div>
                     </div>
                 </div>
             </div>

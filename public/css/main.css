@@ -1,11 +1,10 @@
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 body{
-    background-color: #023047;
-    width: 1200px;
     margin: 0 auto;
+    color: #333;
 }
 .container{
     display: flex;
@@ -20,7 +19,7 @@ body{
     text-align: center;
 }
 .mainbox{
-    background-color: #355C7D ;
+    background-color: black ;
     color: #fff;
     padding: 50px 30px;
     border-radius: 10px;
@@ -40,22 +39,26 @@ input[type=text]{
     width: 50%;
 }
 
-button{
+input[type=button]{
     margin-top: 40px;
     outline: none;
     padding: 10px 8px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    width: 50%;
+    width: 53%;
     font-weight: 600;
     font-family: monospace;
-    color: #fff;
-    background-color: #219ebc;
+    color: #333;
+    background-color: #fff;
 }
 
 #dashboard{
     display: none;
+}
+
+.active{
+    display: block !important;
 }
 /* ------------------------------dashboard---------------- */
 .container2{
@@ -66,6 +69,7 @@ button{
 header{
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
+    background-color: black;
 }
 
 .d-flex{
@@ -95,7 +99,7 @@ header{
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
-    margin-left: 30px;
+    margin-left: 20px;
     padding: 7px 13px;
     letter-spacing: 2px;
 }
@@ -114,15 +118,13 @@ header{
 
 .cboxleft{
     float: left;
-    height: 600px;
     padding: 80px 0;
     box-sizing: border-box;
 }
 
 .sidebar{
-    height: 455px;
-    padding: 20px 40px;
-    border: 2px solid #fff;
+    padding: 50px 40px;
+    border: 2px solid #ddd;
     box-sizing: border-box;
 }
 
@@ -133,7 +135,6 @@ header{
 }
 .sidebar ul li{
     margin-top: 30px;
-    border-bottom: 1px solid #355C7D;
 }
 
 .sidebar ul li {
@@ -141,7 +142,7 @@ header{
     font-weight: 600;
     font-family: monospace;
     font-size: 18px;
-    color: #fff;
+    color: #333;
 }
 .sidebar ul li span{
     font-size: 16px;
@@ -152,28 +153,34 @@ header{
     box-sizing: border-box;
     float: right;
     width: 60%;
-    height: 600px;
     padding: 80px 0;
     box-sizing: border-box;
 }
 
 .m-con{
+    padding: 50px 40px;
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+
+.dff{
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: 455px;
-    border: 2px solid #fff;
+    justify-content: center;
+    align-content: center;
 }
 
 
 .circle{
-    height: 150px;
+    max-height: 150px;
     line-height: 150px;
     width: 150px;
     text-align: center;
     border-radius: 100%;
     font-weight: 600;
-    color: #fff;
+    color: #333;
 }
 
 .mywallet , .reward_per , .reward , .today{
@@ -195,12 +202,147 @@ header{
 }
 
 .ct{
-    color: #fff;
-    width: 150px;
+    color: #333;
+    max-width: 150px;
     text-align: center;
     font-family: monospace;
     letter-spacing: 2px;
     margin-top: 10px;
     font-size:20px;
     font-weight: 800;
+}
+
+.sidebar h1 , .m-con h1{
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+#menuIcon{
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+}
+
+#menuIcon2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    display: none;
+}
+
+#mc{
+    display: none;
+}
+
+#mci{
+    display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+    #mc{
+        display: block;
+    }
+    #mci{
+        display: block;
+    }
+    
+
+    *,body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        padding: 0;
+    }
+    .cboxleft{
+        float: none;
+        padding: 20px;
+    }
+    .cboxright{
+        float: none;
+        width: 100%;
+        padding: 20px;
+    }
+    .m-con h1{
+        text-align: normal;
+    }
+    #menuIcon{
+        float: right;
+        display: block;
+    }
+
+    .right{
+        position: fixed;
+        width: 60%;
+        float: none;
+        margin-left: -10%;
+    }
+    #skd{
+        display: none;
+    }
+
+    .h{
+        display: none;
+        height: 100vh;
+        background-color: #219ebc;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .h li{
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+    .h li a{
+        color: #fff;
+        text-decoration: none;
+        font-family: monospace;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-left: 10px;
+        padding: 7px 13px;
+        letter-spacing: 2px;
+    }
+
+    .mainbox{
+        margin: 20px;
+
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .mainbox{
+        padding: 30px 10px;
+    }
+    input[type=text]{
+        font-size: 16px;
+    }
+    
+    button{
+        font-size: 16px;
+    }
+    .right{
+        position: fixed;
+        width: 70%;
+        float: none;
+        margin-left: -10%;
+    }
+    .sidebar{
+        padding: 20px 10px;
+        border: none;
+    }
+
+    .sidebar ul li{
+        border: none;
+    }
+
+    .m-con{
+        padding: 10px;
+        text-align: center;
+        border: none;
+    }
+    
 }

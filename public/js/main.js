@@ -27,7 +27,7 @@ id('btn').addEventListener('click',(e)=>{
 
                 id('dashboard').style.display = "block"
                 
-                id("xn").innerText = data.result[0].name
+                
 
                 id("n").innerText = data.result[0].name
                 id("i").innerText = data.result[0].userId
@@ -53,3 +53,9 @@ id('btn').addEventListener('click',(e)=>{
     }
 
 })
+
+id('menuIcon').addEventListener('click',()=>{
+    id('col').classList.toggle('active')
+    
+})
+
